@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -12,13 +13,12 @@ import {
 import Image from "next/image";
 import ProposalCard from "@/components/proposal-card";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
-export default function EntityDetailsPage({
-  params,
-}: {
-  params: { entityId: string };
-}) {
-  const { entityId } = params;
+export default function EntityDetailsPage() {
+  const { entityId } = useParams();
+
+  console.log(entityId);
   return (
     <div className="flex flex-row w-full">
       <Tabs
