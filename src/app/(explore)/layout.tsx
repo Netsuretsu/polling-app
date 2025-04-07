@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="w-full">
         <HeaderExplore />
-        <div className="mt-16 pl-20">{children}</div>
+        <div className="mt-16 pl-16">{children}</div>
       </div>
     </div>
   );

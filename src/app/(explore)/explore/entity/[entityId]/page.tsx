@@ -24,8 +24,8 @@ export default function EntityDetailsPage() {
         defaultValue="overview"
         className="w-full flex flex-col lg:flex-row"
       >
-        <div className="lg:fixed lg:w-52 border-r border-[var(--border-color)] lg:h-screen py-5">
-          <TabsList className="flex flex-row gap-2 border-b border-[var(--border-color)] items-center bg-red-200 lg:border-none w-full justify-center lg:flex-col bg-transparent lg:justify-start">
+        <div className="relative lg:fixed w-full lg:w-52 border-r border-[var(--border-color)] lg:h-screen py-5 pl-16 lg:pl-4 overflow-y-auto ">
+          <TabsList className="flex flex-row gap-4 lg:border-b lg:border-[var(--border-color)] items-center lg:border-none w-full justify-center lg:flex-col bg-transparent lg:justify-start ml-26 md:ml-0 lg:ml-0">
             <TabsTrigger
               value="overview"
               className="data-[state=active]:border-transparent data-[state=active]:shadow-none text-md font-medium data-[state=active]:font-extrabold w-full justify-start bg-transparent px-0 dark:data-[state=active]:border-transparent dark:data-[state=active]:bg-transparent cursor-pointer"
@@ -64,7 +64,7 @@ export default function EntityDetailsPage() {
             </TabsTrigger>
           </TabsList>
         </div>
-        <div className="flex flex-1 ml-52">
+        <div className="flex flex-1 lg:ml-52">
           <div className="w-full lg:w-9/12 min-h-screen border-r border-[var(--border-color)] ">
             <TabsContent value="overview">
               <div className="w-full h-[20vh] bg-blue-200"></div>
@@ -109,7 +109,7 @@ export default function EntityDetailsPage() {
               <span className="font-bold pl-5">Voir plus</span>
             </TabsContent>
             <TabsContent value="proposals">
-              <div className="flex flex-row p-5 gap-4">
+              <div className="flex flex-row p-5 gap-4 flex-wrap">
                 <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-[#f7f7f7] w-fit rounded-full text-sm font-bold dark:text-gray-900">
                   Tous
                 </span>
