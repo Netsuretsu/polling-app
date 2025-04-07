@@ -18,7 +18,6 @@ import { useParams } from "next/navigation";
 export default function EntityDetailsPage() {
   const { entityId } = useParams();
 
-  console.log(entityId);
   return (
     <div className="flex flex-row w-full">
       <Tabs
@@ -111,21 +110,21 @@ export default function EntityDetailsPage() {
             </TabsContent>
             <TabsContent value="proposals">
               <div className="flex flex-row p-5 gap-4">
-                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-[#f7f7f7] w-fit rounded-full text-sm font-bold">
+                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-[#f7f7f7] w-fit rounded-full text-sm font-bold dark:text-gray-900">
                   Tous
                 </span>
 
-                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-green-200 w-fit rounded-full text-sm font-bold">
+                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-green-200 w-fit rounded-full text-sm font-bold dark:text-gray-900">
                   <ClockArrowUp size={16} />
                   <span>A venir</span>
                 </span>
 
-                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-yellow-200 w-fit rounded-full text-sm font-bold">
+                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-yellow-200 w-fit rounded-full text-sm font-bold dark:text-gray-900">
                   <CircleDashed size={16} />
                   <span>En cours</span>
                 </span>
 
-                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-red-400 w-fit rounded-full text-sm font-bold">
+                <span className="flex flex-row space-x-1 px-4 py-2 items-center bg-red-400 w-fit rounded-full text-sm font-bold dark:text-gray-900">
                   <CalendarArrowUp size={16} />
                   <span>Terminé</span>
                 </span>
